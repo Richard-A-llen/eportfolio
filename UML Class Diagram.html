@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>UML Class Diagram</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<a href="index.html" class="title">Hyperspace</a>
+				<nav>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="generic.html" class="active">Generic</a></li>
+						<li><a href="elements.html">Elements</a></li>
+					</ul>
+				</nav>
+			</header>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<section id="main" class="wrapper">
+						<div class="inner">
+							<h1 class="major">UML Class Diagram</h1>
+							<span class="image fit"><img src="images/pic04.jpg" alt="" /></span>
+							<p>Here is my attempt at a class diagram. It's for an online supermarket such as Ocardo. User is the superclass and takes staff and customer as sub classes which inherit attributes from the parents class such as UserID and password but also have their own specific attributes such as staff email or customer address. There are examples of composition in the diagram. Classes such as shopping cart could not exist without its parent class (Customer) this is marked in the diagram with a black diamond. If an instance of the customer class was destroyed, any instance of the shopping cart would be destroyed along with it. Along with this Multiplicity set numerical constraints on the relationships, it is demonstrated by the numbers next to the lines showing the relationships between the classes. For example between my customer class and their shopping cart there can only be one of each. However a single custom can have between zero and or any number above that as their number of orders, marked in the diagram as '0...*'. This diagram was drawn with the help of an UML class diagram tutorial (Lucidchart, 2017)</p>
+							<img src="images/online_supermarket_UML.jpg" alt="UML Class Diagram" >
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper alt">
+				<div class="inner">
+					<ul class="menu">
+						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
