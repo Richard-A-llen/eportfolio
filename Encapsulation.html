@@ -44,6 +44,11 @@
 							<p>Python relies on convention to signify private methods and attributes. A single "_" underscore before each instance of a method or attribute shows it is private and any programmer should treat it as such.</p>
 							<span class="image fit"></span><img src="images/Encapsulation 3.jpg" alt="Private attributes" /></span>
 							<p>The __dict__ attribute stores all the attributes of an object in Python. Here it has printed the attributes including the underscore. However this is just a convention to show a method or attribute is private, the Python code itself does not enforce any restrictions to make these attributes private.</p>
+							<p>Double underscores can give an approximation of a private attribute. In the example below, without the helper method, if the __private_method was called in it's place an error message would have shown, however the helper_method allows this method to be called outside it's class. Double underscores are to promote Encapsulation, the setup is to avoid name collision in inheritance.</p>
+							<script src="https://gist.github.com/Richard-A-llen/6b013e2f4ad135c8e294e7ee1e6c11d3.js"></script>"></script>
+							<h3>References:</h3>
+							<p>Code based on Codio project Introduction to Encapsulation available from: </p>
+							<p>https://codio.co.uk/user/introduction-to-encapsulation</p>
 						</div>
 					</section>
 
