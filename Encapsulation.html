@@ -41,7 +41,9 @@
 							<p>No error messages are thrown up. The data in the Phone class is public by default, and any instance of the Phone class can change it's attributes.</p>
 							<p>Having unrestricted data can cause problems in code. For example in this case if nonsense attributes were given to the Phone class they would still be accepted increasing the potential for problems and errors in the program.</p>
 							<span class="image fit"></span><img src="images/Encapsulation 2.jpg" alt="Public attributes gone wrong" /></span>
-							<p></p>	
+							<p>Python relies on convention to signify private methods and attributes. A single "_" underscore before each instance of a method or attribute shows it is private and any programmer should treat it as such.</p>
+							<span class="image fit"></span><img src="images/Encapsulation 3.jpg" alt="Private attributes" /></span>
+							<p>The __dict__ attribute stores all the attributes of an object in Python. Here it has printed the attributes including the underscore. However this is just a convention to show a method or attribute is private, the Python code itself does not enforce any restrictions to make these attributes private.</p>
 						</div>
 					</section>
 
