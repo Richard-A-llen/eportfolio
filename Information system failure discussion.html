@@ -1,0 +1,155 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Encapsulation</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<a href="index.html" class="title">Richard's e-portfolio</a>
+				<nav>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+					</ul>
+				</nav>
+			</header>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<section id="main" class="wrapper">
+						<div class="inner">
+							<h1 class="major">Information system failure discussion</h1>
+							<span class="image fit"><img src="images/pic04.jpg" alt="" /></span>
+							<h2>Initial post</h2>
+								
+								<p>This example of an information system failure happened back in 1982 when the Vancouver Stock Exchange (VSE) switched to an electronic stock index initialised to a value of 1000.000 points and automated by code. This step to modernise the regional stock exchange however did not go to plan. In less than two years the index dropped to 520 points wiping out almost half its value, very curious given the bull market in the early eighties and that in general the stocks listed on the VSE were performing well (Quinn, 1983).</p>
+
+
+
+
+								<p>An investigation was launched and it was discovered that an error in the code had caused the gradual crash of the VSE. The code was incorrect in just one command using floor() rather than round(). As the value of the index was stored to 3 decimal places this mistake had the effect to truncate any value beyond 3 decimal places, effectively chipping off tiny amounts of value from the index instead of rounding the number up or down each time it was updated as is the norm. As the index updated itself over two thousands times a day based on the value of the stocks listed on the exchange this tiny attrition added up to signification amounts over time (Slate, 2019).</p>
+								
+								
+								
+								<p>- return floor(value)</p>
+								
+								<p>+ return round(value)</p>
+								
+								
+								<p>This is an approximation of the code the used by the VSE</p>
+								
+								<p>(Slate, 2019)</p>
+								
+								
+								
+								<p>This mistake was eventually corrected and overnight during November 1983 and the index raised 574.081 points as the previous errors of the past 22 months were corrected, the episode was an embarrassment for the VSE and cost an addition fee of three weeks of computer work and consultants brought in from Toronto and California (Lilley, 1983).</p>
+								
+								
+								
+								<p>This information system failure was linked to just one line of code, and yet the ramifications were huge for the VSE. As well as the enormous financial implications it surely did harm to the reputation of the exchange which would impact on businesses willingness to be listed on the exchange and people looking to invest. The exchange eventually closed in 1999, ninety-three years after it was founded. The exchange failed to adapt into the digital age, had the information system has been developed more effectively in the first place could the end possibly have been different, it's difficult to say but the episode harmed the organisation.</p>
+								
+								
+								
+								<p>References;</p>
+								
+								
+								
+								<p>Quinn, K. (November 8 1983) Ever had a problem rounding off numbers? This stock exchange has.  The Wall Street Journal. p. 37.</p>
+								
+								
+								
+								<p>Slate.com. (October 18 2019) The lines of code that changed everything. Available from:</p>
+								
+								<p>https://slate.com/technology/2019/10/consequential-computer-code-software-history.html</p>
+								
+								
+								
+								<p>Lilley, W. (November 29 1983) Vancover stock index has right number at last. The Toronto Star.</p>
+								<h2>Peer responce</h2>
+								
+								<p>Thanks for sharing this example of an information system failure, I enjoyed your discussion and reading further about this incident. </p>
+
+								<p>One feature of this story I find interesting is how the bug was discovered. It was not discovered by Cloudflare themselves or as a result of a malicious attack on their system, it was discovered and reported to them by Google's project zero (Graham-Cumming J., 2017). Project Zero is a team of security experts who aim it is to make the internet a safer place and to search for zero day vulnerabilities, yet undisclosed or unknown security vulnerabilities in online information system. (Schoen, 2022). In addition to this, in 2018 Cloudflare launched a paid public bug bounty, by mid-January 2022 the company has paid out $211,512 worth of bounties for valid reports of bugs and vulnerabilities. (Gatlan, 2022).</p>
+
+								<p>The Clouldbleed bug had been present in the system for years but only began to leak data when the introduction of cf-html subtly changed the buffering which enable the leakage (Graham-Cumming J., 2017). This poses the question of how this bug could have been prevented. Better testing when new iterations of products are being released; including built test cases and manual inspection of the code. Development teams should not assume one piece of code which is secure running in conjunction with one module will necessarily be secure running with another, in this case the change exposed a vulnerability. As you said bugs and errors cannot completely be avoided so at times there needs to be a bug hunt, sometimes with outside help.</p>
+
+								<p>References:</p>
+
+								<p>Graham-Cumming J. (2017) Incident report on memory leak caused by Cloudflare parser bug. The cloudflare blog. Available from: </p>
+								<p>https://blog.cloudflare.com/incident-report-on-memory-leak-caused-by-cloudflare-parser-bug /[accessed 24 March 2022].</p>
+
+								<p>Schoen, R (2022) A walk through Project Zero Metrics. Available from:</p>
+								<p>https://googleprojectzero.blogspot.com/ [accessed 24 March 2022].</p>
+
+								<p>Gatlan, S (2022) Cloudflare launches a paid public bug bounty program. Available from:</p>
+								<p>https://www.bleepingcomputer.com/news/technology/cloudflare-launches-a-paid-public-bug-bounty-program/ [accessed 24 March 2022].</p>
+								<p>Spectacular indeed, you can see the exact moment the bug kicks in to send the ship off-course. </p>
+
+								<p>In post analysis of the failure it was noted that in addition to the Operand Error caused by the data conversion of the 64-bit floating point to a 16-bit signed integer which originating in the  Inertial Reference System (SRI) a computer to calculate angles and velocities which sends information to the main on-board computer, the on-board computer was unable to switch to the backup SRI because that also crash caused by the same bug immediately (Lions, 1996). There was no graceful exit from the code loop in place to give the on-board computer other options to deal with the situation.</p>
+								
+								
+								<p>Finally, the software error occurred in a part of the software which performed alignments of the rocket while it was still strapped down and inert, this software module served no purpose as soon as the Ariane 5 lifted-off and yet it failure caused the crash of the rocket (Lions, 1996). The software needed to be tested with the same conditions it would run on the day, the same module was used in the Ariane 4 but the build-up of trajectory was five time more in the newer rocket leading to high values of numbers in the system, the required test to spot the bug never happened (Lions, 1996). It seemed the code itself wasn't tidy, letting modules run when they were no longer necessary and using code written for a different rocket allowed a bug to crash an asset worth $460 million.</p>
+								<p>References</p>
+								
+								<p>Lions, J L (1996) Flight 505 Failure Report by the inquiry board. Available at:
+								https://web.archive.org/web/20000815230639/http://www.esrin.esa.it/htdocs/tidc/Press/Press96/ariane5rep.html [accessed 25 March 2022].</p>
+
+								<h2>Summary post</h2>
+								<p>Thank you Andrea for your response and Dr Buckley for the questions</p>
+
+								<p>I think there was more than one way this error could have been prevented from happening. To have avoided it being included in the original code the electronic stock index was launched with more rigorous testing could have helped , a system test designed to model the performance simulated over a long period of time could have lead the developers to the problem with truncation. Also the VSE was not the first electronic stock exchange. The Nasdaq had already moved the traditional stock exchange from a physical space to a network of computers executing trades electronically back in 1971 (Mackintosh, 2021). Had the team in Vancouver brought in the right consultations or even employed someone who worked on the code from New York or California electronic stock exchanges they would have known that rounding was the standard practise in this situation. All this of course requires additional resources which leads me on to the quality triangle.</p>
+
+								<p>Developing any big information system there is going to be tension between different stakeholder groups such as management, users and investors – an outcome of this relates to the speed the system can be developed, the money and resources it takes and quality of the final product. The quality triangle suggests you can only have two of the following: time, cost and quality. For example if you want something fast and low-cost the quality will suffer, conversely if you want a system with high quality and low-cost the resources available to the project will be low and the time it take to produce the desired quality could be extensive (Bourgeois, 2014).</p>
+
+								<p>In summary, I do not think it is realistic to ship code which is entirely error free. There are too many variables which can cause errors, it quickly becomes unrealistic to test them all and software has become too big to iron out all the problems. How software runs on the plethora of available hardware can potentially lead to bugs. The video game Cyberpunk 2077 became infamous for its bugs however it actually ran fairly well on high-specification PCs but the 8th generation console versions were riddled with catastrophic bugs (Paradacreativa, 2022). However with good testing design the most common and important bugs should be found. Software development life cycles account for day-one-bugs in the maintenance final phase of the software development cycle – after the implementation phase is completed a structure should be in place for reported bugs to be fixed, requested new features to be implemented, and regular system updates and system backups performed (Bourgeois, 2014).</p>
+
+
+								<p>References:</p>
+
+								<p>Bourgeois, D. (2014) Welcome to Information Systems for Business and Beyond. Saylor Academy.</p>
+
+								<p>Mackintosh, P. (2021) Nasdaq: 50 Years of Market Innovation. Available from:
+								https://www.nasdaq.com/articles/nasdaq%3A-50-years-of-market-innovation-2021-02-11 [accessed May 29 2022]</p>
+
+								<p>Paradacreativa, (2022). Why does Cyberpunk 2077 have so many bugs? Available form:</p>
+								<p>https://paradacreativa.es/en/why-cyberpunk-has-so-many-bugs/ [accessed May 29 2022]</p>
+
+																
+								
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper alt">
+				<div class="inner">
+					<ul class="menu">
+						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
