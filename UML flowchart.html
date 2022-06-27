@@ -1,0 +1,80 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>UML flowchart</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<a href="index.html" class="title">Hyperspace</a>
+				<nav>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="generic.html" class="active">Generic</a></li>
+						<li><a href="elements.html">Elements</a></li>
+					</ul>
+				</nav>
+			</header>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<section id="main" class="wrapper">
+						<div class="inner">
+							<h1 class="major">Secure Software Development</h1>
+							<span class="image fit"><img src="images/pic04.jpg" alt="" /></span>
+							<h1>JSON injection attack</h1>
+
+							<p>As others have already noted in this discussion injection attacks are one of the top threats as identified by the OWASP. According to OWASP 2021 report on the most critical web application security risks the injection attack ranked 3rd and 94% of applications had some type of vulnerability to an injection attack (Imperva, 2021). I first encountered the NoSQL injection attack during last module NoSQL alternative discussion, and I wanted to continue my research for this discussion. NoSQL injection attacks are a threat because they manipulate web based applications by injecting malicious code into an application to alter it's normal execution leading to loss of data, modification of data and denial of service. (Welekwe, 2020).</p>
+							<p>Web applications often use MongoDB and other NoSQL databases, often include input forms, an attacker can use weaknesses from areas such as input forms to embed malicious code into a NoSQL queries. </p>
+							<p>The injection may take the form of a JSON file. JSON files are used by web applications to communicate with databases to retrieve information – they can also be a vulnerable point for an attack. If an attacker can hijack a JSON file and exploit a vulnerability they may bypass firewalls and endpoint defences so the attacker can manipulate the database as an authorised user (Eassa et al, 2018)</p>
+							<p>Much of my flowchart is based on the demonstration of a JSON injection attack (Yang, 2021) by Ethical hacker and Cybersecurity consultant Loi Liang Yang please find link to the video in my references.</p>
+							<p>References</p>
+							<p>Imperva (2021). OWASP. Available form: 
+							https://www.imperva.com/learn/application-security/owasp-top-10/ [Accessed 26 June 2022] </p>
+
+							<p>Welekwe, A. 2022. What is a JSON injection and how to prevent it? Available from:
+							https://www.comparitech.com/net-admin/json-injection-guide/ [accessed 10 May 2022]</p>
+
+							<p>Eassa et al (2018). NoSQL Injection Attack Detection in Web Applications Using RESTful Service. Programming and Computer Software 44: 1608-3261. Available from: 
+							https://doi.org/10.1134/S036176881901002X [Accessed on 26 June 2022]</p>
+
+							<p>Yang, L (2021). Bug Bounty Explained! How Hackers Break Into Your Website Using Only JSON?! Protect Your Website. Available from:
+							https://www.youtube.com/watch?v=JO241wvrBNw  [accessed on 26 June 2022]</p>
+							<p>Interdum et malerit tristique lorem ipsum dolor.</p>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper alt">
+				<div class="inner">
+					<ul class="menu">
+						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
