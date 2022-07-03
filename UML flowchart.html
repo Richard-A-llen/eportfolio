@@ -59,37 +59,37 @@
 							<p>Hi Rachel. Thanks for your accurate and clear model. Insure design is a broad category which encompasses many different weaknesses but can be expressed as an issue of “missing or ineffective control design” (OWASP,2021). So it was really good to see a specific case example of insure design.  A secure design can still contain implementation defects which can be exploited, but secure design is a culture and methodology that if implemented throughout the course of a project can help identify threats, such as the attack you model, and help to prevent them.<p/>
 							<p>It is interesting to consider the trade off between security and convenience and if a the loss of security is worth the convenience it brings.  In the case of the cinema chain, it is conceivable that they could come under an attack like this, for example a group or individual displeased with the showing of a particular movie might launch this kind of attack. According to OWASP a lack of business risk profiling is a factor which contributes to insecure design, resulting in a failure to determine what level of security design is needed for the system (OWASP, 2021) <p/>
 								
-							<p>References<p/>
+							<p>References</p>
 							<p>OWASP (2021) A04 Insecure Design – OWASP Top 10:2021 [online] owasp.org. Available at:
-							https://owasp.org/Top10/A04_2021-Insecure_Design/#how-to-prevent<p/>
+							https://owasp.org/Top10/A04_2021-Insecure_Design/#how-to-prevent</p>
 							<h2>Peer response 2</h2>
 							<p>Hi Greg. This is an important threat to be aware of as any user of a web application could fall victim as you have mentioned there are multiple ways a user's session can become compromised. It is easy to fall victim to a sniffing attack when using unsecured Wi-Fi networks. Packet sniffing tools can steal data and sensitive information transmitted over the network of an unsecure network. Malicious actors can take advantage of already unsecure networks or create there own, often disguised as free public Wi-Fi networks (CISOMAG, 2021). <p/>
 							<p>Ways to prevent oneself falling victim to a sniffing session attack are to avoid free unsecure Wi-Fi networks and to encrypt all incoming and outgoing communication using a virtual private network (VPN). A VPN would make it difficult for the attacker to decrypt the packet's data, likely the attacker would just find what looked to them like random data of no value(CISOMAG, 2021).<p/>
 							<p>Your UML diagram is clear and informative, could it be modified to include other methods of attack which could be used to gain access to the users session? Thank you. <p/>
-							<p>References<p/>
+							<p>References</p>
 							<p>CISOMAG, 2021. Sniffing Attacks and How to Defect Against Them. Available from:
-							https://cisomag.eccouncil.org/what-are-sniffing-attacks-and-how-to-defend-against-them/ [accessed 27 June 2021]<p/>
+							https://cisomag.eccouncil.org/what-are-sniffing-attacks-and-how-to-defend-against-them/ [accessed 27 June 2021]</p>
 							<h2>Summary Post</h2>
-							<p>Missing from my original model was an explanation of how the attacker gets access to the data from the web application. Attackers can scan websites for vulnerabilities using penetration testing tools such as Burp Suite. These are sophisticated tools which can intercept traffic between a client and a server. Effectively acting as a man in the middle between the browser and the website – allowing the user to intercept view and modify all traffic in both directions (portswigger.net, 2021). <p/>
-							<p>In the case of the JSON injection attack I've attempted to model, although penetration testing tools are capable of capturing all the data flowing between a browser and a server because of the volume of data rendering all raw html and sifting through it data manually would be time consuming, the attacker would either select the type of data to intercept via the tool (if the option was available) or to manually search through all the data using a keyword. For example searching “JSON” in the raw response data coming from the server would allow an attack to locate potential JSON files for attack (Yang, 2021).<p/>
+							<p>Missing from my original model was an explanation of how the attacker gets access to the data from the web application. Attackers can scan websites for vulnerabilities using penetration testing tools such as Burp Suite. These are sophisticated tools which can intercept traffic between a client and a server. Effectively acting as a man in the middle between the browser and the website – allowing the user to intercept view and modify all traffic in both directions (portswigger.net, 2021). </p>
+							<p>In the case of the JSON injection attack I've attempted to model, although penetration testing tools are capable of capturing all the data flowing between a browser and a server because of the volume of data rendering all raw html and sifting through it data manually would be time consuming, the attacker would either select the type of data to intercept via the tool (if the option was available) or to manually search through all the data using a keyword. For example searching “JSON” in the raw response data coming from the server would allow an attack to locate potential JSON files for attack (Yang, 2021).</p>
 								
-							<p>JSON files cause vulnerabilities because they send code which will be read by the server, and because JSON file are versatile it straight forward to put in an array or key value that the server isn't expect and which could cause an unexpected result (LeCheminant, 2015). As Rachel mentioned a lack of JSON-sanitizer would make a system far more vulnerable, I have included this in my new attack model. Wang and Greg also both suggested approaches which involve monitoring the incoming code for JSON injection attacks, which I agree with as a appropriate solution and have included in my diagram. A JSON sanitizer fixes incoming constructs which could result in unwanted responses from the server and turns them into valid JSON – as demonstrated by OWASP sanitizer available on Github(Samuel, 2021). Thanks to all those who responded to my diagram.<p/>
+							<p>JSON files cause vulnerabilities because they send code which will be read by the server, and because JSON file are versatile it straight forward to put in an array or key value that the server isn't expect and which could cause an unexpected result (LeCheminant, 2015). As Rachel mentioned a lack of JSON-sanitizer would make a system far more vulnerable, I have included this in my new attack model. Wang and Greg also both suggested approaches which involve monitoring the incoming code for JSON injection attacks, which I agree with as a appropriate solution and have included in my diagram. A JSON sanitizer fixes incoming constructs which could result in unwanted responses from the server and turns them into valid JSON – as demonstrated by OWASP sanitizer available on Github(Samuel, 2021). Thanks to all those who responded to my diagram.</p>
 								
 							<span class="image fit"><img src="images/JSON injection flowchart.jpg" alt="" /></span>	
 								
-							<h2>References<h2/> 
+							<h2>References</h2> 
 								
 							<p>Portswigger, (2021). How to use Burp Suite for penetration testing. [online] Available from:
-								https://portswigger.net/burp/documentation/desktop/penetration-testing  [accessed 3 July 2022]<p/>
+								https://portswigger.net/burp/documentation/desktop/penetration-testing  [accessed 3 July 2022]</p>
 								
 							<p>Yang, L (2021). Bug Bounty Explained! How Hackers Break Into Your Website Using Only JSON?! Protect Your Website. Available from:
-								https://www.youtube.com/watch?v=JO241wvrBNw [accessed on 3 July 2022]<p/>
+								https://www.youtube.com/watch?v=JO241wvrBNw [accessed on 3 July 2022]</p>
 								
 							<p>LeCheminant, D. (2015). XSS via a spoofed React element. [online] Available from:
-								http://danlec.com/blog/xss-via-a-spoofed-react-element [accessed 3 July 2022]<p/>
+								http://danlec.com/blog/xss-via-a-spoofed-react-element [accessed 3 July 2022]</p>
 								
 							<p>Samuel, M (2021) Json-sanitizer: Given JSON-like content, The JSON Sanitizer converts it to valid JSON.[online] Available from:
-								https://github.com/owasp/json-sanitizer [accessed 3 July 2022]<p/>
+								https://github.com/owasp/json-sanitizer [accessed 3 July 2022]</p>
 							
 						</div>
 					</section>
