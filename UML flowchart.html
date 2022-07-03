@@ -69,6 +69,28 @@
 							<p>References<p/>
 							<p>CISOMAG, 2021. Sniffing Attacks and How to Defect Against Them. Available from:
 							https://cisomag.eccouncil.org/what-are-sniffing-attacks-and-how-to-defend-against-them/ [accessed 27 June 2021]<p/>
+							<h2>Summary Post</h2>
+							<p>Missing from my original model was an explanation of how the attacker gets access to the data from the web application. Attackers can scan websites for vulnerabilities using penetration testing tools such as Burp Suite. These are sophisticated tools which can intercept traffic between a client and a server. Effectively acting as a man in the middle between the browser and the website – allowing the user to intercept view and modify all traffic in both directions (portswigger.net, 2021). <p/>
+							<p>In the case of the JSON injection attack I've attempted to model, although penetration testing tools are capable of capturing all the data flowing between a browser and a server because of the volume of data rendering all raw html and sifting through it data manually would be time consuming, the attacker would either select the type of data to intercept via the tool (if the option was available) or to manually search through all the data using a keyword. For example searching “JSON” in the raw response data coming from the server would allow an attack to locate potential JSON files for attack (Yang, 2021).<p/>
+								
+							<p>JSON files cause vulnerabilities because they send code which will be read by the server, and because JSON file are versatile it straight forward to put in an array or key value that the server isn't expect and which could cause an unexpected result (LeCheminant, 2015). As Rachel mentioned a lack of JSON-sanitizer would make a system far more vulnerable, I have included this in my new attack model. Wang and Greg also both suggested approaches which involve monitoring the incoming code for JSON injection attacks, which I agree with as a appropriate solution and have included in my diagram. A JSON sanitizer fixes incoming constructs which could result in unwanted responses from the server and turns them into valid JSON – as demonstrated by OWASP sanitizer available on Github(Samuel, 2021). Thanks to all those who responded to my diagram.<p/>
+								
+							<span class="image fit"><img src="images/JSON injection flowchart.jpg" alt="" /></span>	
+								
+							<h2>References<h2/> 
+								
+							<p>Portswigger, (2021). How to use Burp Suite for penetration testing. [online] Available from:
+								https://portswigger.net/burp/documentation/desktop/penetration-testing  [accessed 3 July 2022]<p/>
+								
+							<p>Yang, L (2021). Bug Bounty Explained! How Hackers Break Into Your Website Using Only JSON?! Protect Your Website. Available from:
+								https://www.youtube.com/watch?v=JO241wvrBNw [accessed on 3 July 2022]<p/>
+								
+							<p>LeCheminant, D. (2015). XSS via a spoofed React element. [online] Available from:
+								http://danlec.com/blog/xss-via-a-spoofed-react-element [accessed 3 July 2022]<p/>
+								
+							<p>Samuel, M (2021) Json-sanitizer: Given JSON-like content, The JSON Sanitizer converts it to valid JSON.[online] Available from:
+								https://github.com/owasp/json-sanitizer [accessed 3 July 2022]<p/>
+							
 						</div>
 					</section>
 
