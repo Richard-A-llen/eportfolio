@@ -16,7 +16,7 @@
 
 		<!-- Header -->
 			<header id="header">
-				<a href="index.html" class="title">Hyperspace</a>
+				<a href="index.html" class="title">SSD</a>
 				<nav>
 					<ul>
 						<li><a href="index.html">Home</a></li>
@@ -34,11 +34,19 @@
 						<div class="inner">
 							<h1 class="major">Secure Software Development</h1>
 							<span class="image fit"><img src="images/pic04.jpg" alt="" /></span>
-							<h1>JSON injection attack</h1>
-							<h2>Initial post</h2>
+							<h1>Buffer Overflow</h1>
+							<h2>Buffer Overflow in C</h2>
+							<span class="image fit"><img src="images/buffer over flow c code.jpg" alt="" /></span>
+							<p>Now use the rocket icon to compile and run the code. To test it, enter your first name (or at least the first 8 characters of it) you should get the output which is just your name repeated back to you.</p>
+							<p>Run the code a second time (from the command window this can be achieved by entering ./bufoverflow on the command line). This time, enter a string of 10 or more characters.</p>
+							<span class="image fit"><img src="images/Buffer over flow C.jpg" alt="" /></span>
+							<p>What happens?</p>
+							<p>When the name input is 8 characters or less such as the name 'Richard' the code returns the data stored in the buffer. However if the number of charaters exceeds 8 (the buffer limit) an error is returned (** stack smashing detected ***) and the data is elimiated and not compiled.</p>
+							<p>What does the output message mean?</p>
 
 
-							<h2>JSON Injection Attack Flowchart - First attempt</h2>
+							
+							<h2>Buffer Overflow in C</h2>
 							<span class="image fit"><img src="images/Injection attack.jpg" alt="" /></span>
 							<h2>Peer response 1</h2>
 							<p>Hi Rachel. Thanks for your accurate and clear model. Insure design is a broad category which encompasses many different weaknesses but can be expressed as an issue of “missing or ineffective control design” (OWASP,2021). So it was really good to see a specific case example of insure design.  A secure design can still contain implementation defects which can be exploited, but secure design is a culture and methodology that if implemented throughout the course of a project can help identify threats, such as the attack you model, and help to prevent them.<p/>
