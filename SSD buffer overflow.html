@@ -40,9 +40,10 @@
 							<p>Now use the rocket icon to compile and run the code. To test it, enter your first name (or at least the first 8 characters of it) you should get the output which is just your name repeated back to you.</p>
 							<p>Run the code a second time (from the command window this can be achieved by entering ./bufoverflow on the command line). This time, enter a string of 10 or more characters.</p>
 							<span class="image fit"><img src="images/Buffer over flow C.jpg" alt="" /></span>
-							<p>What happens?</p>
-							<p>When the name input is 8 characters or less such as the name 'Richard' the code returns the data stored in the buffer. However if the number of charaters exceeds 8 (the buffer limit) an error is returned (** stack smashing detected ***) and the data is elimiated and not compiled.</p>
-							<p>What does the output message mean?</p>
+							<h3>What happens?</h3>
+							<p>When the name input is 8 characters or less such as the name 'Richard' the code returns the data stored in the buffer. However if the number of charaters exceeds 8 (the buffer limit) an error is returned (** stack smashing detected ***) and on the next line (Aborted (core dumped)).</p>
+							<h3>What does the output message mean?</h3>
+							<p>The error message means that because the user input has exceeded the buffer limit the computer is not compiling the program and the data is dumped. This helps prevent buffer overflow attacks which seek to insert malicious code for example where the return address is stored to protentially redirect the program to a trojan program stored else where in the system.</p>
 
 
 							
