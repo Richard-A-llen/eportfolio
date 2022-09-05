@@ -59,10 +59,12 @@
 							<p>I was unable to call the LIST method successfully, I made several different attempts including using the method for traversing a directory tree suggested by Szabo which utilises the os module of Python to provide a function called walk which makes can go over all the directories and files in a directory tree.  </p>
 							<p></p>
 							<h2>What are the two main security vulnerabilities with your shell?</h2>
-							<p>I believe the two main vulnerabilities of this python shell (assuming my LIST method was working) would be. <br>First, the shell is vulnerable to a potential a command/code injection attack as currently user input is directly being sent to the interpretor for compiling - a malicious actor could inject code which changes the function of the software. <br>Secondly, the LIST function could potentially leak more information than it is supposed to, information about the file structure and folder content, especially when combined with an injection attack, this function could give an attacker access to the systems file tree and the files contain within making it far simpler for them to access data that they should not be able to. This shell could potentially compromise a much bigger system.
+							<p>I believe the two main vulnerabilities of this python shell (assuming my LIST method was working) would be:</p>
+							<p>First, the shell is vulnerable to a potential a command/code injection attack as currently user input is directly being sent to the interpretor for compiling - a malicious actor could inject code which changes the function of the software.</p> 
+							<p>Secondly, the LIST function could potentially leak more information than it is supposed to, information about the file structure and folder content, especially when combined with an injection attack, this function could give an attacker access to the systems file tree and the files contain within making it far simpler for them to access data that they should not be able to. This shell could potentially compromise a much bigger system.</p>
 							<h2>Reference</h2>
 							<p>Szabo, (n.d.). Create your own interactive shell with cmd in Python. [online] Available from:<br>https://code-maven.com/interactive-shell-with-cmd-in-python[accessed 20 August 2022]</p>
-							
+
 	
 						</div>
 					</section>
